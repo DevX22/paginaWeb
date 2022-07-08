@@ -1,0 +1,17 @@
+@mixin background($imgpath, $position: 0 0, $repeat: no-repeat) {
+    background: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+    background-size: contain;
+
+}
+
+.container-fluid {
+    // height: 100%;
+    // width: 100%;
+    @include background('http://192.99.89.90/imagenes/jauja_background.jpg', 'no-repeat');
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: cover;
+
+}
